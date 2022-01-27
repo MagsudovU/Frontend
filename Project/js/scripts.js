@@ -70,6 +70,7 @@ function Delete(e) {
         $.ajax({
             url: apiUrl + 'delete&id='+(e.data.id-1), //index starts from 0, but grid starts from 1
             method: 'POST',
+            contentType: 'application/json',
             complete: function() {
                 dialog.close();
                 grid.reload();
