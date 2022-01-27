@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Kunden SPA</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- JqGrid CSS-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+        <link href="css/gijgo.min.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Kunden SPA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container">
+
+            <div class="margin-top-10">
+                <div class="float-left">
+                </div>
+                <div class="float-right">
+                    <button id="btnAdd" type="button" class="gj-button-md">Add New Record</button>
+                </div>
+            </div>
+            <div class="clear-both"></div>
+            <div class="margin-top-10">
+                <table id="grid"></table>
+            </div>
+        
+            <div id="dialog" class="gj-display-none">
+                <div data-role="body">
+                    <input type="hidden" id="ID" />
+                    <div class="form-row">
+                        <input type="text" class="gj-textbox-md" id="Name" placeholder="Name...">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" class="gj-textbox-md" id="Surname" placeholder="Surname...">
+                    </div>
+                    <div class="form-row">
+                        <select id="Gender" style="width:100%" placeholder="Gender...">
+                            <option value="Mannlich">Mannlich</option>
+                            <option value="Weiblich">Weiblich</option>
+                            <option value="Divers">Divers</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <select id="Titel" style="width:100%" placeholder="Titel...">
+                            <option value="Dr">Dr</option>
+                            <option value="Prof">Prof</option>
+                            <option value="Prof_Dr">Prof_Dr</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="DateOfBirth" placeholder="Date Of Birth..." width="100%" />
+                    </div>
+                </div>
+                <div data-role="footer">
+                    <button type="button" id="btnSave" class="gj-button-md">Save</button>
+                    <button type="button" id="btnCancel" class="gj-button-md">Cancel</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- JqGrid JS-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/gijgo.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
